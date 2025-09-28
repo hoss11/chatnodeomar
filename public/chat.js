@@ -43,11 +43,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     socket.on('chat', function(data){
     escribiendoMensaje.innerHTML = "";
-    output.innerHTML += '<p><strong>' + data.usuario + ': </strong>' + data.mensaje + '</p>';
+    var clase = (data.usuario === usuario.value) ? 'mensaje-propio' : 'mensaje-otro';
+    output.innerHTML += '<p class="' + clase + '"><strong>' + data.usuario + ': </strong>' + data.mensaje + '</p>';
     if (sonidoRecibir) {
         setTimeout(function() {
             sonidoRecibir.play();
-        }, 1500); 
+        }, 300);
     }
 });
 

@@ -121,3 +121,20 @@ button:hover {
     box-shadow: 2px 2px 2px 0 rgba(178, 178, 178, 4);
     left: -9px;
 }
+.mensaje-propio {
+    text-align: right;
+    background: #d1ffd1;
+    margin-left: 30%;
+    margin-right: 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.mensaje-otro {
+    text-align: left;
+    background: #f1f1f1;
+    margin-right: 30%;
+    margin-left: 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
